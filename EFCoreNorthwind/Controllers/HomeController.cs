@@ -81,6 +81,7 @@ namespace EFCoreNorthwind.Controllers
             }).OrderByDescending(x => x.TotalProductQuantity).ToList();
 
 
+
             //tost seven çalışanların sorgusu
             var q7 = _db.Employees.Where(x => EF.Functions.Like(x.Notes, "%toast%")).ToList();
 
